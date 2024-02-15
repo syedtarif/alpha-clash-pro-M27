@@ -36,7 +36,7 @@
                         </p>
                     </div>
                     <div class="flex justify-center items-center h-full">
-                        <p id="current-alphabet" class="text-black text-9xl font-semibold uppercase">Y</p>
+                        <p id="current-alphabet" class="text-black text-9xl font-semibold uppercase">y</p>
                     </div>
                 </div>
 
@@ -81,22 +81,23 @@
                 <div class="flex justify-around w-1/2">
                     <button class="btn rounded-full bg-purple-800 text-white px-8">
                         Life
-                        <span>1</span>
+                        <span id="current-life">5</span>
                     </button>
                     <button class="btn rounded-full bg-purple-800 text-white px-8">
                         Score
-                        <span>1</span>
+                        <span id="current-score">0</span>
                     </button>
                 </div>
             </div>
         </section>
 
         <!-- score section -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section onclick="play()" id="final-score" class="flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-4 bg-[#FFFFFF33] p-4 rounded-lg">
+                <h4 class="text-4xl">Game Over!</h4>
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score: </span>
-                    <span>14</span>
+                    <span id="game-score">14</span>
                 </h1>
                 <button class="btn">Play Again</button>
                 <p>Practice will make you pro</p>
@@ -107,6 +108,7 @@
     <!-- js file link -->
     <script src="./js/utility.js"></script>
     <script src="./js/script.js"></script>
+    <!-- <script src="./js/practice-script.js"></script> for practicing purpose -->
 </body>
 
 </html>
